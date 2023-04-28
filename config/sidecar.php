@@ -1,5 +1,6 @@
 <?php
 
+use App\Sidecar\HelloWorld;
 use Hammerstone\Sidecar\Architecture;
 
 return [
@@ -7,7 +8,9 @@ return [
      * All of your function classes that you'd like to deploy go here.
      */
     'functions' => [
-        \App\Sidecar\OgImage::class,
+        HelloWorld::class,
+        \Wnx\SidecarBrowsershot\Functions\BrowsershotFunction::class,
+        // \App\Sidecar\PepeImage::class,
         // \App\Sidecar\ProcessThumbnail::class,
     ],
 

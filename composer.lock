@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "daa219146d9587d26776b47b53b40dbd",
+    "content-hash": "9624ddaf5af53ac31e711f88275d33b3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3685,6 +3685,66 @@
             "time": "2023-03-10T08:43:19+00:00"
         },
         {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "efab1844b8826443135201c4443690f032c3d533"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/efab1844b8826443135201c4443690f032c3d533",
+                "reference": "efab1844b8826443135201c4443690f032c3d533",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.15.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-27T08:09:01+00:00"
+        },
+        {
             "name": "spatie/temporary-directory",
             "version": "2.1.1",
             "source": {
@@ -6208,6 +6268,90 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "wnx/sidecar-browsershot",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanzweifel/sidecar-browsershot.git",
+                "reference": "758908ba409534e57ae349e2ba191194302772c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanzweifel/sidecar-browsershot/zipball/758908ba409534e57ae349e2ba191194302772c9",
+                "reference": "758908ba409534e57ae349e2ba191194302772c9",
+                "shasum": ""
+            },
+            "require": {
+                "hammerstone/sidecar": "^0.4.0",
+                "illuminate/contracts": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "spatie/browsershot": "^3.52",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "league/flysystem-aws-s3-v3": "^1.0|^2.0|^3.0",
+                "nunomaduro/collision": "^5.10|^6.0|^7.0",
+                "nunomaduro/larastan": "^1.0|^2.0",
+                "orchestra/testbench": "^6.22|^7.0|^8.0",
+                "pestphp/pest": "^1.21 | ^2.0",
+                "pestphp/pest-plugin-laravel": "^1.1 | ^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9 | ^10",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Wnx\\SidecarBrowsershot\\SidecarBrowsershotServiceProvider"
+                    ],
+                    "aliases": {
+                        "SidecarBrowsershot": "Wnx\\SidecarBrowsershot\\Facades\\SidecarBrowsershot"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wnx\\SidecarBrowsershot\\": "src",
+                    "Wnx\\SidecarBrowsershot\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Zweifel",
+                    "email": "hello@stefanzweifel.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Sidecar function to run Browsershot on Lambda.",
+            "homepage": "https://github.com/stefanzweifel/sidecar-browsershot",
+            "keywords": [
+                "browsershot",
+                "lambda",
+                "laravel",
+                "sidecar",
+                "sidecar-browsershot",
+                "wnx"
+            ],
+            "support": {
+                "issues": "https://github.com/stefanzweifel/sidecar-browsershot/issues",
+                "source": "https://github.com/stefanzweifel/sidecar-browsershot/tree/v1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/stefanzweifel",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-28T07:33:09+00:00"
         }
     ],
     "packages-dev": [
