@@ -1,5 +1,6 @@
 <?php
 
+use App\Sidecar\OgImage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('sidecar', function () {
+  return OgImage::execute([
+    'text' => 'PHP to JS and Back Again!'
+]);
 });
